@@ -7,50 +7,128 @@
 				"requests": "grpc://localhost:7051",
 				"events": "grpc://localhost:7053",
 				"server-hostname": "peer0.org1.example.com",
-				"tls_cacerts": "/home/ubuntu/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
+				"tls_cacerts": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
 			},
 			"peer1": {
 				"requests": "grpc://localhost:8051",
 				"events": "grpc://localhost:8053",
 				"server-hostname": "peer1.org1.example.com",
-				"tls_cacerts": "/home/ubuntu/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/ca.crt"
+				"tls_cacerts": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/ca.crt"
 
 			},
 			"peer2": {
 				"requests": "grpc://localhost:9051",
                                 "events": "grpc://localhost:9053",
                                 "server-hostname": "peer2.org1.example.com",
-				"tls_cacerts": "/home/ubuntu/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer2.org1.example.com/tls/ca.crt"
+				"tls_cacerts": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer2.org1.example.com/tls/ca.crt"
 			},
 			"admin": {
-				"key": "/home/ubuntu/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore",
-				"cert": "/home/ubuntu/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts"
+				"key": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore",
+				"cert": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts"
 			}
 		},
 		"org2": {
 			"name": "org2",
 			"mspid" : "Org2MSP",
 			"peer0": {
-				"requests": "grpc://192.168.1.224:10051",
-				"events": "grpc://192.168.1.224:10053",
+				"requests": "grpc://35.184.120.96:10051",
+				"events": "grpc://34.73.154.41:10053",
 				"server-hostname": "peer0.org2.example.com",
-				"tls_cacerts": "/home/ubuntu/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt"
+				"tls_cacerts": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt"
 			},
 			"peer1": {
-				"requests": "grpc://192.168.1.224:11051",
-				"events": "grpc://192.168.1.224:11053",
+				"requests": "grpc://34.73.154.41:11051",
+				"events": "grpc://34.73.154.41:11053",
 				"server-hostname": "peer1.org2.example.com",
-				"tls_cacerts": "/home/ubuntu/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/ca.crt"
+				"tls_cacerts": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/ca.crt"
 			},
-                        "peer2": {
-                                "requests": "grpc://192.168.1.224:12051",
-                                "events": "grpc://192.168.1.224:12053",
-                                "server-hostname": "peer2.org2.example.com",
-				"tls_cacerts": "/home/ubuntu/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org2.example.com/peers/peer2.org2.example.com/tls/ca.crt"
-                        },
+            "peer2": {
+                "requests": "grpc://34.73.154.41:12051",
+                "events": "grpc://34.73.154.41:12053",
+                "server-hostname": "peer2.org2.example.com",
+				"tls_cacerts": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org2.example.com/peers/peer2.org2.example.com/tls/ca.crt"
+            },
 			"admin": {
-				"key": "/home/ubuntu/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/keystore",
-				"cert": "/home/ubuntu/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/signcerts"
+				"key": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/keystore",
+				"cert": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/signcerts"
+			}
+		},
+		"org3": {
+			"name": "org3",
+			"mspid": "Org3MSP",
+			"peer0": {
+				"requests": "grpc://35.245.221.209:10051",
+				"events": "grpc://35.245.221.209:10053",
+				"server-hostname": "peer0.org3.example.com",
+				"tls_cacerts": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/tls/ca.crt"
+			},
+			"peer1": {
+				"requests": "grpc://35.245.221.209:11051",
+				"events": "grpc://35.245.221.209:11053",
+				"server-hostname": "peer1.org3.example.com",
+				"tls_cacerts": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org3.example.com/peers/peer1.org3.example.com/tls/ca.crt"
+			},
+			"peer2": {
+				"requests": "grpc://35.245.221.209:12051",
+				"events": "grpc://35.245.221.209:12053",
+				"server-hostname": "peer2.org3.example.com",
+				"tls_cacerts": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org3.example.com/peers/peer2.org3.example.com/tls/ca.crt"
+			},
+			"admin": {
+				"key": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/keystore",
+				"cert": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/signcerts"
+			}
+		},
+		"org4": {
+			"name": "org4",
+			"mspid": "Org4MSP",
+			"peer0": {
+				"requests": "grpc://35.197.76.86:10051",
+				"events": "grpc://35.197.76.86:10053",
+				"server-hostname": "peer0.org4.example.com",
+				"tls_cacerts": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org4.example.com/peers/peer0.org4.example.com/tls/ca.crt"
+			},
+			"peer1": {
+				"requests": "grpc://35.197.76.86:11051",
+				"events": "grpc://35.197.76.86:11053",
+				"server-hostname": "peer1.org4.example.com",
+				"tls_cacerts": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org4.example.com/peers/peer1.org4.example.com/tls/ca.crt"
+			},
+			"peer2": {
+				"requests": "grpc://35.197.76.86:12051",
+				"events": "grpc://35.197.76.86:12053",
+				"server-hostname": "peer2.org4.example.com",
+				"tls_cacerts": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org4.example.com/peers/peer2.org4.example.com/tls/ca.crt"
+			},
+			"admin": {
+				"key": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp/keystore",
+				"cert": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org4.example.com/users/Admin@org4.example.com/msp/signcerts"
+			}
+		},
+		"org5": {
+			"name": "org5",
+			"mspid": "Org5MSP",
+			"peer0": {
+				"requests": "grpc://35.236.30.81:10051",
+				"events": "grpc://35.236.30.81:10053",
+				"server-hostname": "peer0.org5.example.com",
+				"tls_cacerts": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org5.example.com/peers/peer0.org5.example.com/tls/ca.crt"
+			},
+			"peer1": {
+				"requests": "grpc://35.236.30.81:11051",
+				"events": "grpc://35.236.30.81:11053",
+				"server-hostname": "peer1.org5.example.com",
+				"tls_cacerts": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org5.example.com/peers/peer1.org5.example.com/tls/ca.crt"
+			},
+			"peer2": {
+				"requests": "grpc://35.236.30.81:12051",
+				"events": "grpc://35.236.30.81:12053",
+				"server-hostname": "peer2.org5.example.com",
+				"tls_cacerts": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org5.example.com/peers/peer2.org5.example.com/tls/ca.crt"
+			},
+			"admin": {
+				"key": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/msp/keystore",
+				"cert": "/home/nrbcpoc/fabric-dev-servers-multipeer/composer/crypto-config/peerOrganizations/org5.example.com/users/Admin@org5.example.com/msp/signcerts"
 			}
 		}
 	},
